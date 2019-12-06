@@ -20,9 +20,9 @@ class LauncherWidget(QWidget):
     def __init__(self, parent=None, width=None, height=None, title=None, tray=True):
         QWidget.__init__(self, parent=parent)
 
-        title = (title if title else 'Jean-Paul Start')
-        width = (width if width else 376)
-        height = (height if height else 144)
+        title = (title or 'Jean-Paul Start')
+        width = (width or 376)
+        height = (height or 144)
 
         self.mouse_pressed = False
         self.offset = QCursor()
@@ -72,6 +72,7 @@ class LauncherWidget(QWidget):
             self.tray.setIcon(self.window_icon)
             self.tray.setToolTip(title)
             self.tray.activated.connect(self.showNormalReason)
+            self.tray.show()
 
         menu = QMenu()
         self.version_menu = menu.addAction('')
