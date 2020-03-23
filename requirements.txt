@@ -1,2 +1,2 @@
 jeanpaulstart
-PySide2
+PyQt5

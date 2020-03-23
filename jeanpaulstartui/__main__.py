@@ -1,8 +1,8 @@
 import os
 import sys
 import logging
-from PySide2.QtGui import *
-from PySide2.QtWidgets import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 from jeanpaulstartui import ROOT, launch_widget
 
 
